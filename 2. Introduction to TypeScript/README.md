@@ -43,4 +43,6 @@ class Person {
     return `${this.firstName}`;
   }
 }
+```
 
+## Basic Data Types
