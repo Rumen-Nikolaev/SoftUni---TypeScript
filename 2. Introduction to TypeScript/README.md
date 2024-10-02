@@ -47,25 +47,35 @@ class Person {
 
 ## Basic Data Types
 ```typescript
+
 // String: Represents textual data.
 let str: string = 'hello';
+
 // Number: Represents numeric data.
 let decimal: number;
+
 // Boolean: Holds true or false values.
 le isBool: boolean = true;
+
 // Symbol: Represents unique data.
 let uniqueSymbol: symbol = Symbol('mySymbol');
+
 // null and undefined: Special types for representing absence of value
 let person: null = null;
 let undefinedValue: undefined = undefined;
+
 // Array: Holds a collection of elements of a specified type.
 let arrayOfStr: string[] = ['Hello', 'World'];
+
 // Tuple: Fixed-size array with specified types for each element.
 let tuple: [string, number] = ['Hello', 11];
+
 // Enum: Defines named constants for better readability.
 enum DaysOfTheWeek { Monday, Tuesday };
+
 // Any: Can hold any value
 let a: any = 'hello';
+
 // Void: Used for functions that do not return a value.
 function greet(message: string): void {
   console.log(message);
