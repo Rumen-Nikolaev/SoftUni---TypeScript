@@ -1,0 +1,2 @@
+## 6. Lowest Prices in Cities
+Find the lowest price for each product across several towns. The input comes as an array of strings, where each element contains data in the format: "{townName} | {productName} | {productPrice}". Print each product with its lowest price and the town where it is sold at that price.
