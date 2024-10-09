@@ -55,4 +55,58 @@ class Dog {
 
 let dog = new Dog('Tommy', 3);
 console.log(dog.bark()); // Output: Tommy is barking.
+```
+## Class Members
 
+### Properties
+Properties store data in an object. They are defined within a class and initialized by the constructor.
+
+### Methods
+Methods are functions that define the behavior of a class. Each method should have a clear and focused purpose.
+
+### Constructor
+A constructor initializes the object's properties. Each class can only have one constructor.
+
+### Access Modifiers
+Access modifiers control the visibility of class members:
+
+- **Public**: Accessible from anywhere.
+- **Private**: Only accessible within the class.
+- **Protected**: Accessible within the class and its subclasses.
+- **Readonly**: Allows access, but prohibits modification.
+
+### Example:
+```typescript
+class Person {
+    private name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    greet(): string {
+        return `Hello, my name is ${this.name}.`;
+    }
+}
+```
+
+### Abstract Classes
+Access modifiers control the visibility of class members:
+Abstract classes cannot be instantiated directly. They can define methods without implementations, which must be implemented by subclasses.
+
+### Example:
+```typescript
+abstract class Animal {
+    abstract makeSound(): void;
+}
+
+class Dog extends Animal {
+    makeSound(): void {
+        console.log("Bark");
+    }
+}
+
+const dog = new Dog();
+dog.makeSound(); // Output: Bark
+
+```
